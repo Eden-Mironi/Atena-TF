@@ -1,0 +1,33 @@
+{
+  "training_summary": {
+    "total_episodes": 1020,
+    "average_reward": 14.804009863099822,
+    "std_reward": 13.477525335923405,
+    "min_reward": -30.749999999999993,
+    "max_reward": 41.96527055379243,
+    "final_reward": 38.82656387930656
+  },
+  "configuration_used": {
+    "humanity_coeff": 4.5,
+    "diversity_coeff": 8.0,
+    "kl_coeff": 2.2,
+    "compaction_coeff": 2.0,
+    "adam_lr": 0.0003,
+    "ppo_gamma": 0.995,
+    "ppo_lambda": 0.97,
+    "max_steps": 12
+  },
+  "reward_components_enabled": {
+    "human_rewards": true,
+    "snorkel": true,
+    "diversity": true,
+    "interestingness": true
+  },
+  "comparison_notes": [
+    "This implementation includes enhanced reward components",
+    "Rule-based humanity scoring added",
+    "Enhanced diversity and interestingness calculations",
+    "Comprehensive logging matching original ATENA-master",
+    "Results should be comparable to original project"
+  ]
+}
