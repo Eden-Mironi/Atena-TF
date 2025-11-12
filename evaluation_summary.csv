@@ -1,0 +1,7 @@
+,total_reward,total_reward,num_steps,num_steps,avg_reward,avg_reward,filter_actions,group_actions,back_actions
+,mean,std,mean,std,mean,std,mean,mean,mean
+dataset,,,,,,,,,
+0,11.01,1.54,12.0,0.0,0.92,0.13,3.0,8.0,1.0
+1,-0.89,0.0,12.0,0.0,-0.07,0.0,5.0,7.0,0.0
+2,-8.44,0.06,12.0,0.0,-0.7,0.01,7.0,5.0,0.0
+3,20.81,0.14,12.0,0.0,1.73,0.01,2.0,9.0,1.0

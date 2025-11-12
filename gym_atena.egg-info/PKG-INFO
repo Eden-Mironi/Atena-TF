@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: gym_atena
+Version: 0.0.1
+Requires-Dist: gym
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tensorflow
+Dynamic: requires-dist

@@ -1,0 +1,151 @@
+[0. 0. 0. 0.5 0. 0.]
+Back
+reward:0.0
+dict_items([('empty_display', 0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 0), ('interestingness', 0), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', 0.0)])
+
+dict_items([])
+
+   packet_number            eth_dst            eth_src highest_layer                                                                info_line          ip_dst         ip_src  length      sniff_timestamp  tcp_dstport  tcp_srcport  tcp_stream
+0              0  00:26:b9:2b:0b:59  00:0c:29:54:bf:79           TCP  8888?34374 [ACK] Seq=1 Ack=1 Win=65535 Len=0 TSval=6446 TSecr=159921662     192.168.1.1  192.168.1.122      66  2013-06-02 10:19:14        34374         8888           0
+1              1  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                       Echo (ping) request  id=0x0200, seq=256/1, ttl=128         1.2.3.4  192.168.1.122      74  2013-06-02 10:19:15           -1           -1          -1
+2              2  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                       Echo (ping) request  id=0x0200, seq=512/2, ttl=128   82.108.24.168  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+3              3  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                       Echo (ping) request  id=0x0200, seq=768/3, ttl=128   82.108.25.192  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+4              4  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1024/4, ttl=128    82.108.6.189  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+5              5  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1280/5, ttl=128    82.108.84.10  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+6              6  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1536/6, ttl=128  82.108.255.172  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+7              7  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1792/7, ttl=128   82.108.62.158  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+8              8  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=2048/8, ttl=128    82.108.28.12  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+9              9  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=2304/9, ttl=128  82.108.213.181  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+...             ...             ...             ...             ...             ...
+8638           8638  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=33308/7298, ttl=128  82.108.202.221   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8639           8639  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=33564/7299, ttl=128    82.108.9.246   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8640           8640  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=33820/7300, ttl=128  82.108.105.149   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8641           8641  00:0c:29:54:bf:79  00:26:b9:2b:0b:59           TCP                              139 > 1330 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0   192.168.1.122  82.108.118.243      54  2013-06-02 10:21:14         1330          139         203
+8642           8642  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=34076/7301, ttl=128   82.108.187.69   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8643           8643  00:0c:29:54:bf:79  00:26:b9:2b:0b:59          ICMP   Echo (ping) reply    id=0x0200, seq=33308/7298, ttl=50 (request in 8639)   192.168.1.122  82.108.202.221      75  2013-06-02 10:21:14           -1           -1          -1
+8644           8644  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=34332/7302, ttl=128   82.108.215.38   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8645           8645  00:0c:29:54:bf:79  00:26:b9:2b:0b:59          ICMP  Echo (ping) reply    id=0x0200, seq=33820/7300, ttl=240 (request in 8641)   192.168.1.122  82.108.105.149      75  2013-06-02 10:21:14           -1           -1          -1
+8646           8646  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=34588/7303, ttl=128  82.108.105.149   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8647           8647  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=34844/7304, ttl=128  82.108.225.214   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+---------------------------------------------------
+[1. 4. 0. 0.5 0. 0.]
+Filter on Column 'info_line', using condition '<built-in function eq>', with term 'ping'
+reward:2.3263617142904653
+dict_items([('empty_display', -1.0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 2.0), ('interestingness', 1.2263617142904655), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', 0.05)])
+
+dict_items([(<NetHumanRule.humane_columns_group: 1>, 0.05)])
+
+Empty DataFrame
+Columns: [packet_number, eth_dst, eth_src, highest_layer, info_line, ip_dst, ip_src, length, sniff_timestamp, tcp_dstport, tcp_srcport, tcp_stream]
+Index: []
+---------------------------------------------------
+[2. 3. 0. 0.5 0. 0.]
+Group on Column 'highest_layer' and aggregate with '<built-in function len>' on the column 'packet_number'
+reward:1.1004067762658483
+dict_items([('empty_display', -1.0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 2.0), ('interestingness', 0.00040677626584808467), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', 0.05)])
+
+dict_items([(<NetHumanRule.neutral_columns_group: 2>, 0.05)])
+
+Empty DataFrame
+Columns: [packet_number]
+Index: []
+---------------------------------------------------
+[2. 5. 0. 0.5 0. 0.]
+Group on Column 'ip_dst' and aggregate with '<built-in function len>' on the column 'packet_number'
+reward:1.2004067762658484
+dict_items([('empty_display', -1.0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 2.0), ('interestingness', 0.00040677626584808467), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', 0.1)])
+
+dict_items([(<NetHumanRule.humane_columns_group: 1>, 0.1)])
+
+Empty DataFrame
+Columns: [packet_number]
+Index: []
+---------------------------------------------------
+[2. 2. 0. 0.5 0. 0.]
+Group on Column 'eth_src' and aggregate with '<built-in function len>' on the column 'packet_number'
+reward:1.8004067762658482
+dict_items([('empty_display', -1.0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 2.0), ('interestingness', 0.00040677626584808467), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', 0.4)])
+
+dict_items([(<NetHumanRule.humane_columns_group: 1>, 0.4)])
+
+Empty DataFrame
+Columns: [packet_number]
+Index: []
+---------------------------------------------------
+[2. 3. 0. 0.5 0. 0.]
+Group on Column 'highest_layer' and aggregate with '<built-in function len>' on the column 'packet_number'
+reward:-4.0
+dict_items([('empty_display', -1.0), ('empty_groupings', 0), ('same_display_seen_already', -1.0), ('back', 0), ('diversity', -1.0), ('interestingness', -1.0), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', 0.0)])
+
+dict_items([])
+
+Empty DataFrame
+Columns: [packet_number]
+Index: []
+---------------------------------------------------
+[2. 6. 0. 0.5 0. 0.]
+Group on Column 'ip_src' and aggregate with '<built-in function len>' on the column 'packet_number'
+reward:1.1004067762658483
+dict_items([('empty_display', -1.0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 2.0), ('interestingness', 0.00040677626584808467), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', 0.05)])
+
+dict_items([(<NetHumanRule.neutral_columns_group: 2>, 0.05)])
+
+Empty DataFrame
+Columns: [packet_number]
+Index: []
+---------------------------------------------------
+[2. 3. 0. 0.5 0. 0.]
+Group on Column 'highest_layer' and aggregate with '<built-in function len>' on the column 'packet_number'
+reward:-4.0
+dict_items([('empty_display', -1.0), ('empty_groupings', 0), ('same_display_seen_already', -1.0), ('back', 0), ('diversity', -1.0), ('interestingness', -1.0), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', 0.0)])
+
+dict_items([])
+
+Empty DataFrame
+Columns: [packet_number]
+Index: []
+---------------------------------------------------
+[2. 3. 0. 0.5 0. 0.]
+Group on Column 'highest_layer' and aggregate with '<built-in function len>' on the column 'packet_number'
+reward:-4.0
+dict_items([('empty_display', -1.0), ('empty_groupings', 0), ('same_display_seen_already', -1.0), ('back', 0), ('diversity', -1.0), ('interestingness', -1.0), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', 0.0)])
+
+dict_items([])
+
+Empty DataFrame
+Columns: [packet_number]
+Index: []
+---------------------------------------------------
+[2. 10. 0. 0.5 0. 0.]
+Group on Column 'tcp_srcport' and aggregate with '<built-in function len>' on the column 'packet_number'
+reward:1.1004067762658483
+dict_items([('empty_display', -1.0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 2.0), ('interestingness', 0.00040677626584808467), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', 0.05)])
+
+dict_items([(<NetHumanRule.neutral_columns_group: 2>, 0.05)])
+
+Empty DataFrame
+Columns: [packet_number]
+Index: []
+---------------------------------------------------
+[2. 9. 0. 0.5 0. 0.]
+Group on Column 'tcp_dstport' and aggregate with '<built-in function len>' on the column 'packet_number'
+reward:1.2004067762658484
+dict_items([('empty_display', -1.0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 2.0), ('interestingness', 0.00040677626584808467), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', 0.1)])
+
+dict_items([(<NetHumanRule.humane_columns_group: 1>, 0.1)])
+
+Empty DataFrame
+Columns: [packet_number]
+Index: []
+---------------------------------------------------
+[2. 1. 0. 0.5 0. 0.]
+Group on Column 'eth_dst' and aggregate with '<built-in function len>' on the column 'packet_number'
+reward:1.1004067762658483
+dict_items([('empty_display', -1.0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 2.0), ('interestingness', 0.00040677626584808467), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', 0.05)])
+
+dict_items([(<NetHumanRule.neutral_columns_group: 2>, 0.05)])
+
+Empty DataFrame
+Columns: [packet_number]
+Index: []
+---------------------------------------------------

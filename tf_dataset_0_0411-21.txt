@@ -1,0 +1,236 @@
+[0. 0. 0. 0.5 0. 0.]
+Back
+reward:0.0
+dict_items([('empty_display', 0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 0), ('interestingness', 0), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', 0.0)])
+
+dict_items([])
+
+   packet_number            eth_dst            eth_src highest_layer                                                                info_line          ip_dst         ip_src  length      sniff_timestamp  tcp_dstport  tcp_srcport  tcp_stream
+0              0  00:26:b9:2b:0b:59  00:0c:29:54:bf:79           TCP  8888?34374 [ACK] Seq=1 Ack=1 Win=65535 Len=0 TSval=6446 TSecr=159921662     192.168.1.1  192.168.1.122      66  2013-06-02 10:19:14        34374         8888           0
+1              1  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                       Echo (ping) request  id=0x0200, seq=256/1, ttl=128         1.2.3.4  192.168.1.122      74  2013-06-02 10:19:15           -1           -1          -1
+2              2  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                       Echo (ping) request  id=0x0200, seq=512/2, ttl=128   82.108.24.168  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+3              3  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                       Echo (ping) request  id=0x0200, seq=768/3, ttl=128   82.108.25.192  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+4              4  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1024/4, ttl=128    82.108.6.189  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+5              5  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1280/5, ttl=128    82.108.84.10  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+6              6  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1536/6, ttl=128  82.108.255.172  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+7              7  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1792/7, ttl=128   82.108.62.158  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+8              8  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=2048/8, ttl=128    82.108.28.12  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+9              9  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=2304/9, ttl=128  82.108.213.181  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+...             ...             ...             ...             ...             ...
+8638           8638  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=33308/7298, ttl=128  82.108.202.221   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8639           8639  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=33564/7299, ttl=128    82.108.9.246   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8640           8640  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=33820/7300, ttl=128  82.108.105.149   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8641           8641  00:0c:29:54:bf:79  00:26:b9:2b:0b:59           TCP                              139 > 1330 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0   192.168.1.122  82.108.118.243      54  2013-06-02 10:21:14         1330          139         203
+8642           8642  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=34076/7301, ttl=128   82.108.187.69   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8643           8643  00:0c:29:54:bf:79  00:26:b9:2b:0b:59          ICMP   Echo (ping) reply    id=0x0200, seq=33308/7298, ttl=50 (request in 8639)   192.168.1.122  82.108.202.221      75  2013-06-02 10:21:14           -1           -1          -1
+8644           8644  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=34332/7302, ttl=128   82.108.215.38   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8645           8645  00:0c:29:54:bf:79  00:26:b9:2b:0b:59          ICMP  Echo (ping) reply    id=0x0200, seq=33820/7300, ttl=240 (request in 8641)   192.168.1.122  82.108.105.149      75  2013-06-02 10:21:14           -1           -1          -1
+8646           8646  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=34588/7303, ttl=128  82.108.105.149   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8647           8647  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=34844/7304, ttl=128  82.108.225.214   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+---------------------------------------------------
+[1. 4. 0. 25.5 0. 0.]
+Filter on Column 'info_line', using condition '<built-in function eq>', with term 'ping'
+reward:0.2263617142904657
+dict_items([('empty_display', -1.0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 2.0), ('interestingness', 1.2263617142904655), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', -1.0)])
+
+dict_items([(<NetHumanRule.info_line_bad_filter_operators: 11>, -1.0)])
+
+Empty DataFrame
+Columns: [packet_number, eth_dst, eth_src, highest_layer, info_line, ip_dst, ip_src, length, sniff_timestamp, tcp_dstport, tcp_srcport, tcp_stream]
+Index: []
+---------------------------------------------------
+[2. 10. 0. 0.5 0. 0.]
+Group on Column 'tcp_srcport' and aggregate with '<built-in function len>' on the column 'packet_number'
+reward:-0.9995932237341518
+dict_items([('empty_display', -1.0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 2.0), ('interestingness', 0.00040677626584808467), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', -1.0)])
+
+dict_items([(<NetHumanRule.group_results_in_single_group: 28>, -1.0)])
+
+Empty DataFrame
+Columns: [packet_number]
+Index: []
+---------------------------------------------------
+[0. 0. 0. 0.5 0. 0.]
+Back
+reward:0.0
+dict_items([('empty_display', 0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 0), ('interestingness', 0), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', 0.0)])
+
+dict_items([])
+
+Empty DataFrame
+Columns: [packet_number, eth_dst, eth_src, highest_layer, info_line, ip_dst, ip_src, length, sniff_timestamp, tcp_dstport, tcp_srcport, tcp_stream]
+Index: []
+---------------------------------------------------
+[0. 0. 0. 0.5 0. 0.]
+Back
+reward:-1.3107084375300013
+dict_items([('empty_display', 0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 0), ('interestingness', 0), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', -0.5553542187650006)])
+
+dict_items([(<NetHumanRule.back_after_back: 21>, 0.2)])
+
+   packet_number            eth_dst            eth_src highest_layer                                                                info_line          ip_dst         ip_src  length      sniff_timestamp  tcp_dstport  tcp_srcport  tcp_stream
+0              0  00:26:b9:2b:0b:59  00:0c:29:54:bf:79           TCP  8888?34374 [ACK] Seq=1 Ack=1 Win=65535 Len=0 TSval=6446 TSecr=159921662     192.168.1.1  192.168.1.122      66  2013-06-02 10:19:14        34374         8888           0
+1              1  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                       Echo (ping) request  id=0x0200, seq=256/1, ttl=128         1.2.3.4  192.168.1.122      74  2013-06-02 10:19:15           -1           -1          -1
+2              2  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                       Echo (ping) request  id=0x0200, seq=512/2, ttl=128   82.108.24.168  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+3              3  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                       Echo (ping) request  id=0x0200, seq=768/3, ttl=128   82.108.25.192  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+4              4  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1024/4, ttl=128    82.108.6.189  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+5              5  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1280/5, ttl=128    82.108.84.10  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+6              6  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1536/6, ttl=128  82.108.255.172  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+7              7  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1792/7, ttl=128   82.108.62.158  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+8              8  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=2048/8, ttl=128    82.108.28.12  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+9              9  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=2304/9, ttl=128  82.108.213.181  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+...             ...             ...             ...             ...             ...
+8638           8638  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=33308/7298, ttl=128  82.108.202.221   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8639           8639  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=33564/7299, ttl=128    82.108.9.246   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8640           8640  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=33820/7300, ttl=128  82.108.105.149   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8641           8641  00:0c:29:54:bf:79  00:26:b9:2b:0b:59           TCP                              139 > 1330 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0   192.168.1.122  82.108.118.243      54  2013-06-02 10:21:14         1330          139         203
+8642           8642  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=34076/7301, ttl=128   82.108.187.69   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8643           8643  00:0c:29:54:bf:79  00:26:b9:2b:0b:59          ICMP   Echo (ping) reply    id=0x0200, seq=33308/7298, ttl=50 (request in 8639)   192.168.1.122  82.108.202.221      75  2013-06-02 10:21:14           -1           -1          -1
+8644           8644  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=34332/7302, ttl=128   82.108.215.38   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8645           8645  00:0c:29:54:bf:79  00:26:b9:2b:0b:59          ICMP  Echo (ping) reply    id=0x0200, seq=33820/7300, ttl=240 (request in 8641)   192.168.1.122  82.108.105.149      75  2013-06-02 10:21:14           -1           -1          -1
+8646           8646  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=34588/7303, ttl=128  82.108.105.149   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8647           8647  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=34844/7304, ttl=128  82.108.225.214   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+---------------------------------------------------
+[0. 0. 0. 0.5 0. 0.]
+Back
+reward:-1.5107084375300013
+dict_items([('empty_display', 0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 0), ('interestingness', 0), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', -0.7553542187650006)])
+
+dict_items([(<NetHumanRule.back_after_back: 21>, 0.2)])
+
+   packet_number            eth_dst            eth_src highest_layer                                                                info_line          ip_dst         ip_src  length      sniff_timestamp  tcp_dstport  tcp_srcport  tcp_stream
+0              0  00:26:b9:2b:0b:59  00:0c:29:54:bf:79           TCP  8888?34374 [ACK] Seq=1 Ack=1 Win=65535 Len=0 TSval=6446 TSecr=159921662     192.168.1.1  192.168.1.122      66  2013-06-02 10:19:14        34374         8888           0
+1              1  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                       Echo (ping) request  id=0x0200, seq=256/1, ttl=128         1.2.3.4  192.168.1.122      74  2013-06-02 10:19:15           -1           -1          -1
+2              2  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                       Echo (ping) request  id=0x0200, seq=512/2, ttl=128   82.108.24.168  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+3              3  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                       Echo (ping) request  id=0x0200, seq=768/3, ttl=128   82.108.25.192  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+4              4  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1024/4, ttl=128    82.108.6.189  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+5              5  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1280/5, ttl=128    82.108.84.10  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+6              6  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1536/6, ttl=128  82.108.255.172  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+7              7  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1792/7, ttl=128   82.108.62.158  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+8              8  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=2048/8, ttl=128    82.108.28.12  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+9              9  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=2304/9, ttl=128  82.108.213.181  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+...             ...             ...             ...             ...             ...
+8638           8638  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=33308/7298, ttl=128  82.108.202.221   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8639           8639  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=33564/7299, ttl=128    82.108.9.246   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8640           8640  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=33820/7300, ttl=128  82.108.105.149   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8641           8641  00:0c:29:54:bf:79  00:26:b9:2b:0b:59           TCP                              139 > 1330 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0   192.168.1.122  82.108.118.243      54  2013-06-02 10:21:14         1330          139         203
+8642           8642  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=34076/7301, ttl=128   82.108.187.69   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8643           8643  00:0c:29:54:bf:79  00:26:b9:2b:0b:59          ICMP   Echo (ping) reply    id=0x0200, seq=33308/7298, ttl=50 (request in 8639)   192.168.1.122  82.108.202.221      75  2013-06-02 10:21:14           -1           -1          -1
+8644           8644  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=34332/7302, ttl=128   82.108.215.38   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8645           8645  00:0c:29:54:bf:79  00:26:b9:2b:0b:59          ICMP  Echo (ping) reply    id=0x0200, seq=33820/7300, ttl=240 (request in 8641)   192.168.1.122  82.108.105.149      75  2013-06-02 10:21:14           -1           -1          -1
+8646           8646  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=34588/7303, ttl=128  82.108.105.149   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8647           8647  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                    Echo (ping) request  id=0x0200, seq=34844/7304, ttl=128  82.108.225.214   192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+---------------------------------------------------
+[1. 6. 1. 24.5 0. 0.]
+Filter on Column 'ip_src', using condition '<built-in function eq>', with term '192.168.1.122'
+reward:2.991330662645721
+dict_items([('empty_display', 0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 2.0), ('interestingness', 1.1297449873422285), ('kl_distance', 0.14548800024056002), ('compaction_gain', 0), ('humanity', 0.08304883753146608)])
+
+dict_items([(<NetHumanRule.filter_from_displayed_column: 26>, 0.7), (<NetHumanRule.humane_columns_filter: 13>, 0.1), (<NetHumanRule.filter_num_of_rows_changed: 17>, 0.1), (<NetHumanRule.filter_term_appears_in_human_session: 9>, 0.9)])
+
+   packet_number            eth_dst            eth_src highest_layer                                                                info_line          ip_dst         ip_src  length      sniff_timestamp  tcp_dstport  tcp_srcport  tcp_stream
+0              0  00:26:b9:2b:0b:59  00:0c:29:54:bf:79           TCP  8888?34374 [ACK] Seq=1 Ack=1 Win=65535 Len=0 TSval=6446 TSecr=159921662     192.168.1.1  192.168.1.122      66  2013-06-02 10:19:14        34374         8888           0
+1              1  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                       Echo (ping) request  id=0x0200, seq=256/1, ttl=128         1.2.3.4  192.168.1.122      74  2013-06-02 10:19:15           -1           -1          -1
+2              2  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                       Echo (ping) request  id=0x0200, seq=512/2, ttl=128   82.108.24.168  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+3              3  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                       Echo (ping) request  id=0x0200, seq=768/3, ttl=128   82.108.25.192  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+4              4  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1024/4, ttl=128    82.108.6.189  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+5              5  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1280/5, ttl=128    82.108.84.10  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+6              6  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1536/6, ttl=128  82.108.255.172  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+7              7  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=1792/7, ttl=128   82.108.62.158  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+8              8  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=2048/8, ttl=128    82.108.28.12  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+9              9  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                      Echo (ping) request  id=0x0200, seq=2304/9, ttl=128  82.108.213.181  192.168.1.122      75  2013-06-02 10:19:19           -1           -1          -1
+...             ...             ...             ...             ...             ...
+8633           8633  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                           Echo (ping) request  id=0x0200, seq=32796/7296, ttl=128    82.108.130.5  192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8635           8635  00:26:b9:2b:0b:59  00:0c:29:54:bf:79           TCP  [TCP Retransmission] 1330 > 139 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 SACK_PERM=1  82.108.118.243  192.168.1.122      62  2013-06-02 10:21:14          139         1330         203
+8636           8636  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                           Echo (ping) request  id=0x0200, seq=33052/7297, ttl=128   82.108.166.69  192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8638           8638  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                           Echo (ping) request  id=0x0200, seq=33308/7298, ttl=128  82.108.202.221  192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8639           8639  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                           Echo (ping) request  id=0x0200, seq=33564/7299, ttl=128    82.108.9.246  192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8640           8640  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                           Echo (ping) request  id=0x0200, seq=33820/7300, ttl=128  82.108.105.149  192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8642           8642  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                           Echo (ping) request  id=0x0200, seq=34076/7301, ttl=128   82.108.187.69  192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8644           8644  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                           Echo (ping) request  id=0x0200, seq=34332/7302, ttl=128   82.108.215.38  192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8646           8646  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                           Echo (ping) request  id=0x0200, seq=34588/7303, ttl=128  82.108.105.149  192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+8647           8647  00:26:b9:2b:0b:59  00:0c:29:54:bf:79          ICMP                           Echo (ping) request  id=0x0200, seq=34844/7304, ttl=128  82.108.225.214  192.168.1.122      75  2013-06-02 10:21:14           -1           -1          -1
+---------------------------------------------------
+[2. 1. 0. 0.5 0. 0.]
+Group on Column 'eth_dst' and aggregate with '<built-in function len>' on the column 'packet_number'
+reward:-3.0
+dict_items([('empty_display', 0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 2.0), ('interestingness', 0), ('kl_distance', 0), ('compaction_gain', -2.0), ('humanity', -2.0)])
+
+dict_items([(<NetHumanRule.group_results_in_single_group: 28>, -1.0)])
+
+                   packet_number
+eth_dst                         
+00:26:b9:2b:0b:59           7832
+---------------------------------------------------
+[2. 3. 0. 0.5 0. 0.]
+Group on Column 'highest_layer' and aggregate with '<built-in function len>' on the column 'packet_number'
+reward:4.08163384250464
+dict_items([('empty_display', 0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 2.0), ('interestingness', 1.977403004043665), ('kl_distance', 0), ('compaction_gain', 1.977403004043665), ('humanity', -0.9365860827913446)])
+
+dict_items([(<NetHumanRule.humane_columns_group: 1>, 0.4), (<NetHumanRule.highest_layer_group_on_filtered_display: 37>, -0.5), (<NetHumanRule.group_num_of_groups_changed: 6>, 0.1)])
+
+                                 packet_number
+eth_dst           highest_layer               
+00:26:b9:2b:0b:59 ICMP                    7304
+                  TCP                      528
+---------------------------------------------------
+[2. 9. 0. 0.5 0. 0.]
+Group on Column 'tcp_dstport' and aggregate with '<built-in function len>' on the column 'packet_number'
+reward:4.256981441334573
+dict_items([('empty_display', 0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 2.0), ('interestingness', 1.9133006241271486), ('kl_distance', 0), ('compaction_gain', 1.9133006241271486), ('humanity', -0.7348099034598619)])
+
+dict_items([(<NetHumanRule.humane_columns_group: 1>, 0.1), (<NetHumanRule.group_num_of_groups_changed: 6>, 0.1)])
+
+                                             packet_number
+eth_dst           highest_layer tcp_dstport               
+00:26:b9:2b:0b:59 ICMP          -1                    7304
+                  TCP            139                   370
+                                 445                   157
+                                 34374                   1
+---------------------------------------------------
+[2. 5. 0. 0.5 0. 0.]
+Group on Column 'ip_dst' and aggregate with '<built-in function len>' on the column 'packet_number'
+reward:0.9713726668002832
+dict_items([('empty_display', 0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 2.0), ('interestingness', 0.01558733028033323), ('kl_distance', 0), ('compaction_gain', 0.01558733028033323), ('humanity', -0.40490099688019165)])
+
+dict_items([(<NetHumanRule.humane_columns_group: 1>, 0.4), (<NetHumanRule.group_num_of_groups_changed: 6>, 0.1)])
+
+                                                          packet_number
+eth_dst           highest_layer tcp_dstport ip_dst                     
+00:26:b9:2b:0b:59 ICMP          -1          1.2.3.4                   1
+                                            82.108.0.109              2
+                                            82.108.0.11               1
+                                            82.108.0.111              2
+                                            82.108.0.127              2
+                                            82.108.0.150              2
+                                            82.108.0.241              2
+                                            82.108.0.27               2
+                                            82.108.0.39               2
+                                            82.108.0.41               2
+...             ...
+eth_dst           highest_layer tcp_dstport ip_dst                      
+00:26:b9:2b:0b:59 TCP           445         82.108.72.137              3
+                                            82.108.72.230              1
+                                            82.108.76.251              3
+                                            82.108.77.113              3
+                                            82.108.86.146              1
+                                            82.108.87.145              3
+                                            82.108.87.6                3
+                                            82.108.97.145              2
+                                            82.108.99.209              3
+                                34374       192.168.1.1                1
+---------------------------------------------------
+[0. 0. 0. 0.5 0. 0.]
+Back
+reward:-1.8967330273414624
+dict_items([('empty_display', 0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 0), ('interestingness', 0), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', -0.9483665136707312)])
+
+dict_items([])
+
+                                             packet_number
+eth_dst           highest_layer tcp_dstport               
+00:26:b9:2b:0b:59 ICMP          -1                    7304
+                  TCP            139                   370
+                                 445                   157
+                                 34374                   1
+---------------------------------------------------

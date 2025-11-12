@@ -1,0 +1,13 @@
+{
+  "corpus_tree_bleu1": 0.2844827586206897,
+  "corpus_tree_bleu2": 0.03680597509855791,
+  "corpus_tree_bleu3": 0.11064850539038791,
+  "corpus_tree_bleu4": 0.19184883397758223,
+  "corpus_tree_gleu1": 0.1810344827586207,
+  "corpus_tree_gleu2": 0.09728506787330317,
+  "corpus_tree_gleu3": 0.06825396825396825,
+  "corpus_tree_gleu4": 0.05388471177944862,
+  "micro_precision": 0.3142857142857143,
+  "micro_recall": 0.15,
+  "micro_f1": 0.20307692307692304
+}

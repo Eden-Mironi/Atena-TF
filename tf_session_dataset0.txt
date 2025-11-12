@@ -1,0 +1,27 @@
+[2, 6, 4, 1.5, 0, 0]
+Group on Column 'ip_src' and aggregate with '<built-in function len>' on the column 'packet_number'
+reward:3.3940131664276123
+dict_items([('empty_display', 0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 2.0), ('interestingness', 0.14700661604230345), ('kl_distance', 0), ('compaction_gain', 0.14700661604230345), ('humanity', 0.8)])
+
+dict_items([])
+
+No display data available
+---------------------------------------------------
+[2, 11, 6, 4.0, 0, 0]
+Group on Column 'tcp_stream' and aggregate with '<built-in function len>' on the column 'packet_number'
+reward:2.182648181915283
+dict_items([('empty_display', 0), ('empty_groupings', 0), ('same_display_seen_already', 0), ('back', 0), ('diversity', 2.0), ('interestingness', 0.041324127379211074), ('kl_distance', 0), ('compaction_gain', 0.041324127379211074), ('humanity', 0.1)])
+
+dict_items([])
+
+No display data available
+---------------------------------------------------
+[2, 11, 6, 2.5, 0, 0]
+Group on Column 'tcp_stream' and aggregate with '<built-in function len>' on the column 'packet_number'
+reward:-2.0
+dict_items([('empty_display', 0), ('empty_groupings', 0), ('same_display_seen_already', -1.0), ('back', 0), ('diversity', -1.0), ('interestingness', 0), ('kl_distance', 0), ('compaction_gain', 0), ('humanity', 0)])
+
+dict_items([])
+
+No display data available
+---------------------------------------------------

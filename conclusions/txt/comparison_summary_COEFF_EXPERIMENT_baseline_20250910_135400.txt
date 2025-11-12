@@ -1,0 +1,18 @@
+TensorFlow vs Master Implementation Comparison
+==================================================
+
+TensorFlow Data Source: results/COEFF_EXPERIMENT_baseline_20250910_135400
+Analysis Date: 2025-09-10 13:55:48
+
+Reward Statistics:
+  TensorFlow Mean: 2.318
+  Master Mean:     5.585
+  Difference:      3.266
+
+Action Distributions:
+  TensorFlow: Back 28.7%, Filter 32.3%, Group 39.1%
+  Master:     Back 38.2%, Filter 14.5%, Group 47.3%
+
+Match Quality: NEEDS IMPROVEMENT
+
+CONCLUSION: Some performance differences detected (Δ=3.27)

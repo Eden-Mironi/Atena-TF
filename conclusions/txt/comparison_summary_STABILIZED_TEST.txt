@@ -1,0 +1,18 @@
+TensorFlow vs Master Implementation Comparison
+==================================================
+
+TensorFlow Data Source: results/STABILIZED_TEST
+Analysis Date: 2025-09-10 17:35:14
+
+Reward Statistics:
+  TensorFlow Mean: 12.505
+  Master Mean:     5.585
+  Difference:      6.921
+
+Action Distributions:
+  TensorFlow: Back 32.6%, Filter 39.4%, Group 28.0%
+  Master:     Back 38.2%, Filter 14.5%, Group 47.3%
+
+Match Quality: NEEDS IMPROVEMENT
+
+CONCLUSION: Some performance differences detected (Δ=6.92)

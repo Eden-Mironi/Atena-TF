@@ -1,0 +1,19 @@
+REWARD COMPONENT CONVERGENCE ANALYSIS
+==================================================
+
+empty_display: CONVERGED | Final: 0.000±0.000
+empty_groupings: CONVERGED | Final: 0.000±0.000
+same_display_seen_already: NOT_CONVERGED | Final: -0.360±1.221
+back: CONVERGED | Final: 0.000±0.000
+diversity: NOT_CONVERGED | Final: 4.760±4.463
+interestingness: NOT_CONVERGED | Final: 0.528±0.731
+kl_distance: NOT_CONVERGED | Final: 0.209±0.484
+compaction_gain: NOT_CONVERGED | Final: 0.320±0.658
+humanity: NOT_CONVERGED | Final: -0.614±2.674
+snorkel_humanity: CONVERGED | Final: 0.000±0.000
+rules_based_humanity: NOT_CONVERGED | Final: 0.392±0.471
+human_sessions_similarity: CONVERGED | Final: 0.000±0.000
+coherency_score: CONVERGED | Final: 0.000±0.000
+readability_score: CONVERGED | Final: 0.000±0.000
+diversity_components: CONVERGED | Final: 0.000±0.000
+interestingness_components: CONVERGED | Final: 0.000±0.000

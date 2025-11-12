@@ -1,0 +1,10 @@
+# 1. ESSENTIAL: Ignore the entire virtual environment
+venv/
+.venv/
+
+# 2. Ignore ALL of the results folder by default
+results/
+
+# 3. RE-INCLUDE files within 'results/' that start with a number
+# The pattern [0-9] matches any digit (0 through 9).
+!results/[0-9]*

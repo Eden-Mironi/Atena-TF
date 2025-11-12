@@ -1,0 +1,17 @@
+{
+  "evaluation_timestamp": "20251111_173604",
+  "model_path": "results/1809-14:00",
+  "num_datasets": 4,
+  "sessions_per_dataset": 5,
+  "total_sessions": 20,
+  "evaluation_type": "master_compatible_tree_based",
+  "metrics_available": [
+    "tree_bleu",
+    "tree_gleu",
+    "precision",
+    "recall",
+    "f1",
+    "micro_metrics"
+  ],
+  "data_source": "real_training_data"
+}

@@ -1,0 +1,18 @@
+TensorFlow vs Master Implementation Comparison
+==================================================
+
+TensorFlow Data Source: results/1009-16:16-snorkel-coeff2
+Analysis Date: 2025-09-10 16:19:12
+
+Reward Statistics:
+  TensorFlow Mean: 13.145
+  Master Mean:     5.585
+  Difference:      7.561
+
+Action Distributions:
+  TensorFlow: Back 26.2%, Filter 40.7%, Group 33.0%
+  Master:     Back 38.2%, Filter 14.5%, Group 47.3%
+
+Match Quality: NEEDS IMPROVEMENT
+
+CONCLUSION: Some performance differences detected (Δ=7.56)
