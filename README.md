@@ -128,6 +128,28 @@ python train_with_decay.py --steps 500000 --outdir my_training_run --seed 42 --e
 - `--resume-from`: Resume from checkpoint (e.g., `results/checkpoint_step_500000`)
 - `--resume-step`: Step number to resume from
 
+**Choosing a Dataset**:
+
+The system supports multiple datasets/schemas. You can select a dataset by modifying `Configuration/config.py` before training:
+
+```python
+# In Configuration/config.py, change the schema line:
+schema = 'NETWORKING'  # Default - network packet analysis
+# schema = 'FLIGHTS'   # Flight data analysis
+# schema = 'BIG_FLIGHTS'   # Larger flight dataset
+# schema = 'WIDE_FLIGHTS'  # Flight data with more columns
+# schema = 'WIDE12_FLIGHTS'  # Flight data with 12 columns
+```
+
+**Available Datasets**:
+- `NETWORKING` (default): Network packet analysis with 12 fields
+- `FLIGHTS`: Flight data analysis
+- `BIG_FLIGHTS`: Extended flight dataset
+- `WIDE_FLIGHTS`: Flight data with additional attributes
+- `WIDE12_FLIGHTS`: Flight data optimized for 12-column analysis
+
+Each dataset has different characteristics (number of fields, data types, etc.) which affect the action space dimensions. The training script will automatically configure the appropriate action space based on the selected schema
+
 ### Create Comparison Proof
 
 ```bash
