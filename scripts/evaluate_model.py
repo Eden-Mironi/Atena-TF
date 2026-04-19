@@ -9,6 +9,7 @@ Example: python3 evaluate_model.py results/MASTER_EXACT_DIVERSE_MEANS_20250903_1
 
 import sys
 import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import argparse
 import numpy as np
 import tensorflow as tf

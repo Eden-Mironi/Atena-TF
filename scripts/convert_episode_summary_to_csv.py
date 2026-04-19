@@ -7,7 +7,7 @@ import pandas as pd
 import os
 from datetime import datetime
 
-def convert_episode_summary_to_csv(jsonl_path, output_dir='reward_learning_curves'):
+def convert_episode_summary_to_csv(jsonl_path, output_dir=os.path.join('results', 'reward_learning_curves')):
     """
     Convert episode_summary.jsonl to TensorBoard CSV format
     

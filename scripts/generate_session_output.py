@@ -4,10 +4,11 @@ Generate ATENA-TF Session Output
 Creates session files in master's exact format showing step-by-step exploration
 """
 
-import numpy as np
-import tensorflow as tf
 import sys
 import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+import numpy as np
+import tensorflow as tf
 from io import StringIO
 import argparse
 
@@ -314,7 +315,8 @@ def generate_session_output(model_path: str, dataset_id: int = 0, max_steps: int
     
     # Save output
     if output_file is None:
-        output_file = f"tf_session_dataset{dataset_id}.txt"
+        output_file = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                                   "session_outputs", f"tf_session_dataset{dataset_id}.txt")
     
     try:
         with open(output_file, 'w') as f:

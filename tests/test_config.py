@@ -4,9 +4,9 @@
 import sys
 import os
 
-# Add paths
-sys.path.append(os.path.join(os.path.dirname(__file__), 'Configuration'))
-sys.path.append(os.path.dirname(__file__))
+# Add project root to path (works from any subdirectory)
+_project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, _project_root)
 
 print("=" * 60)
 print("TESTING CONFIGURATION")

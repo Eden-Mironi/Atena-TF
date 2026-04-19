@@ -2,6 +2,8 @@
 """
 Test script to verify gradient flow through ParametricSoftmaxDistribution
 """
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import tensorflow as tf
 from models.ppo.networks import ParametricSoftmaxDistribution
 import numpy as np

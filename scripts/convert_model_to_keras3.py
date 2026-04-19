@@ -2,6 +2,8 @@
 Convert TensorFlow 2.13 (Keras 2) model weights to TensorFlow 2.16+ (Keras 3) format
 """
 import os
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 import tensorflow as tf

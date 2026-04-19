@@ -22,8 +22,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from copy import deepcopy
 
-# Add project root to Python path
-project_root = os.path.dirname(os.path.abspath(__file__))
+# Add project root to Python path (works from any subdirectory)
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, project_root)
 
 # TensorFlow imports

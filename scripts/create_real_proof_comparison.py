@@ -573,9 +573,9 @@ def main():
     if args.tf_path:
         # Use the path name in the summary filename
         path_name = Path(args.tf_path).name
-        summary_file = f'comparison_summary_{path_name}.txt'
+        summary_file = os.path.join('conclusions', 'txt', f'comparison_summary_{path_name}.txt')
     else:
-        summary_file = 'comparison_summary.txt'
+        summary_file = os.path.join('conclusions', 'txt', 'comparison_summary.txt')
     with open(summary_file, 'w') as f:
         f.write("TensorFlow vs Master Implementation Comparison\n")
         f.write("=" * 50 + "\n\n")

@@ -6,9 +6,9 @@ import os
 import numpy as np
 import tensorflow as tf
 
-# Add paths
-sys.path.append(os.path.dirname(__file__))
-sys.path.append(os.path.join(os.path.dirname(__file__), 'Configuration'))
+# Add project root to path (works from any subdirectory)
+_project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, _project_root)
 
 print("=" * 60)
 print("🔬 SINGLE PPO UPDATE DIAGNOSTIC TEST")
