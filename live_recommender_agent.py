@@ -262,10 +262,11 @@ class TFRecommenderStepResult:
         self.verbose = verbose
         
         # Extract display data
-        if "raw_display" in info:
-            self.df_to_display = info["raw_display"][1]  # Aggregated dataframe
+        raw_display = info.get("raw_display")
+        if raw_display is not None:
+            self.df_to_display = raw_display[1]  # Aggregated dataframe
             if self.df_to_display is None:
-                self.df_to_display = info["raw_display"][0]  # Filtered dataframe
+                self.df_to_display = raw_display[0]  # Filtered dataframe
         else:
             self.df_to_display = None
         
