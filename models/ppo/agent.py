@@ -508,11 +508,10 @@ class PPOAgent:
             action_np = action.numpy()
             log_prob_np = log_prob.numpy()
             value_np = value.numpy()
-        
-        # Ensure action is an array (not scalar) for environments that expect arrays
-        if np.isscalar(action_np):
-            action_np = np.array([action_np])
-        
+
+        # Ensure action is at least 1-D (np.isscalar misses 0-d numpy arrays)
+        action_np = np.atleast_1d(action_np)
+
         return action_np, log_prob_np, value_np
 
     def batch_act_with_mean(self, batch_obs):
@@ -723,15 +722,14 @@ class PPOAgent:
             action_np = action.numpy()
             log_prob_np = log_prob.numpy()
             value_np = value.numpy()
-        
-        # Ensure action is an array (not scalar) for environments that expect arrays
-        if np.isscalar(action_np):
-            action_np = np.array([action_np])
-        
-        return action_np, log_prob_np, value_np
-    
 
-    
+        # Ensure action is at least 1-D (np.isscalar misses 0-d numpy arrays)
+        action_np = np.atleast_1d(action_np)
+
+        return action_np, log_prob_np, value_np
+
+
+
     def batch_observe_and_train(self, batch_obs, batch_rewards, batch_dones, batch_resets):
         """
         MASTER-EXACT: Replicate ChainerRL's PPO batch_observe_and_train functionality
