@@ -1047,11 +1047,17 @@ class PPOAgent:
         if os.path.exists(normalizer_file):
             with open(normalizer_file, 'r') as f:
                 normalizer_data = json.load(f)
-            
+
+            # obs_normalizer is lazily created during act(); initialise it now
+            # so we can restore the saved statistics before the first forward pass.
+            if self.obs_normalizer is None:
+                obs_dim = len(normalizer_data['mean'])
+                self.obs_normalizer = EmpiricalNormalization(obs_dim, clip_threshold=5)
+
             # Restore normalizer state
             self.obs_normalizer.mean.assign(normalizer_data['mean'])
-            self.obs_normalizer.std.assign(normalizer_data.get('std', normalizer_data.get('var', [])))  
-            self.obs_normalizer.count.assign(normalizer_data['count'])
+            self.obs_normalizer.std.assign(normalizer_data.get('std', normalizer_data.get('var', [])))
+            self.obs_normalizer.count.assign(int(normalizer_data['count']))
             print(f"Normalizer state loaded from {normalizer_file}")
         else:
             print(f"Normalizer state not found at {normalizer_file}")
