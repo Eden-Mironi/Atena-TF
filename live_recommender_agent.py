@@ -105,16 +105,19 @@ class TFRecommenderAgent:
         """Get next action from trained agent (for evaluation compatibility)"""
         if observation is not None:
             self.state = observation
-        
+
         # Get action from trained policy - USE DETERMINISTIC for consistent recommendations
         action, log_prob, value = self.agent.act_most_probable(self.state)
-        
-        # Convert to action vector
-        action_vector = self.env.cont2dis(action)
-        
+
+        # For FF_PARAM_SOFTMAX the policy returns a flat discrete index, not a
+        # continuous 6-element vector.  Convert it to the 6-element action vector
+        # via the environment's decoder before discretising.
+        action_idx = int(action[0]) if hasattr(action, '__len__') else int(action)
+        action_vector = self.env.cont2dis(self.env.param_softmax_idx_to_action(action_idx))
+
         # Store for potential reuse
         self.last_action_vector = action_vector
-        
+
         return action_vector
     
     def get_action(self, observation=None, deterministic=True):
