@@ -8,3 +8,6 @@ results/
 # 3. RE-INCLUDE files within 'results/' that start with a number
 # The pattern [0-9] matches any digit (0 through 9).
 !results/[0-9]*
+
+# 4. RE-INCLUDE the best-model pointer file
+!results/best_model_path.txt

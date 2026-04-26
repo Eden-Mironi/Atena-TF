@@ -288,59 +288,65 @@ class TFRecommenderStepResult:
 
 def find_latest_trained_model(results_dir="results"):
     """
-    Find the most recent trained model in the results directory
-    
+    Find the best trained model in the results directory.
+
+    Checks for a 'best_model_path.txt' pointer file first so that the
+    preferred model can be pinned explicitly (important for Colab where a
+    fresh git clone gives every file the same mtime, making mtime-sorting
+    unreliable and causing a random early-training model to be selected).
+
     Args:
         results_dir: Directory containing training run subdirectories (default: "results")
-    
+
     Returns:
-        Path to trained model (e.g., "results/0511-10:50/trained_model")
+        Path to trained model (e.g., "results/0511-resumed/best_agent")
         or None if no model found
     """
-    import glob
     import os
-    
+
     if not os.path.exists(results_dir):
         print(f"Results directory '{results_dir}' not found")
         return None
-    
-    # Find all subdirectories with trained models
+
+    # ── 1. Honour an explicit pointer file ────────────────────────────────
+    pointer_file = os.path.join(results_dir, "best_model_path.txt")
+    if os.path.exists(pointer_file):
+        with open(pointer_file) as f:
+            pinned_path = f.read().strip()
+        weights_file = f"{pinned_path}_policy_weights.weights.h5"
+        if os.path.exists(weights_file):
+            print(f"Found pinned model: {pinned_path}")
+            return pinned_path
+        print(f"Pinned path '{pinned_path}' not found, falling back to scan.")
+
+    # ── 2. Scan all subdirectories ─────────────────────────────────────────
     model_dirs = []
-    
-    # Check each subdirectory in results/
+
     for subdir in os.listdir(results_dir):
         full_path = os.path.join(results_dir, subdir)
         if not os.path.isdir(full_path):
             continue
-        
-        # Check for trained_model files (Keras 3 format)
+
         model_base = os.path.join(full_path, "trained_model")
-        keras3_path = f"{model_base}_policy_weights.weights.h5"
-        
-        # Check for best_agent files (alternative location)
         best_agent_base = os.path.join(full_path, "best_agent")
-        best_keras3_path = f"{best_agent_base}_policy_weights.weights.h5"
-        
-        if os.path.exists(keras3_path):
-            # Get modification time for sorting
-            mtime = os.path.getmtime(keras3_path)
+
+        if os.path.exists(f"{model_base}_policy_weights.weights.h5"):
+            mtime = os.path.getmtime(f"{model_base}_policy_weights.weights.h5")
             model_dirs.append((mtime, model_base, "trained_model"))
-        elif os.path.exists(best_keras3_path):
-            mtime = os.path.getmtime(best_keras3_path)
+        elif os.path.exists(f"{best_agent_base}_policy_weights.weights.h5"):
+            mtime = os.path.getmtime(f"{best_agent_base}_policy_weights.weights.h5")
             model_dirs.append((mtime, best_agent_base, "best_agent"))
-    
+
     if not model_dirs:
         print(f"No trained models found in '{results_dir}/' directory")
-        print(f"    Looking for files matching: trained_model_policy_weights.weights.h5")
         return None
-    
-    # Sort by modification time (newest first)
-    model_dirs.sort(reverse=True)
-    
-    # Return the most recent model
-    latest_mtime, latest_path, model_type = model_dirs[0]
+
+    # Sort by mtime DESC; use path ASC as tiebreaker so that later-named
+    # directories (e.g. '0511-resumed' > '0511-10:50') win on a fresh clone
+    # where all files share the same mtime.
+    model_dirs.sort(key=lambda x: (x[0], x[1]))  # ascending by (mtime, path)
+    latest_mtime, latest_path, model_type = model_dirs[-1]   # take the last
     print(f"Found latest model: {latest_path} ({model_type})")
-    
     return latest_path
 
 # Example usage and testing
