@@ -35,8 +35,9 @@ class TFRecommenderAgent:
         
         # Create environment
         self.env = make_enhanced_atena_env()
-        
-        # Initialize state  
+        self.env.ret_df = True  # Ensure step() returns DataFrames in info['raw_display']
+
+        # Initialize state
         self.state = self.env.reset(dataset_number=dataset_number)
         self.env.max_steps = 1000
         

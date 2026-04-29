@@ -246,8 +246,8 @@ class ATENAEnvCont(gym.Env):
         elif rtype == "group":
             col = self.data.columns[act_vector[1]]
             agg_col = self.data.columns[act_vector[4]]
-            agg_func = self.env_prop.AGG_MAP_ATENA.get(act_vector[5])
-            return "Group on Column '%s' and aggregate with '%s' on the column '%s'" % (col, str(agg_func), agg_col)
+            agg_func_name = ATENAUtils.AGG_MAP_ATENA_STR.get(act_vector[5], str(self.env_prop.AGG_MAP_ATENA.get(act_vector[5])))
+            return "Group on Column '%s' and aggregate with '%s' on the column '%s'" % (col, agg_func_name, agg_col)
         else:
             # ENVIRONMENT FIX: Match master's error handling
             raise NotImplementedError
